@@ -1,0 +1,219 @@
+* {
+    font-family: "Source Sans 3";
+}
+
+/* Mobile Viewport */
+
+@media (max-width: 640px) {
+    body {
+        background-color: #eaeaea;
+    }
+
+    #navbar {
+        width: 100vw;
+        background-color: #ffffff;
+        box-shadow: 0px 2px 3px 3px rgba(0, 0, 0, 0.2);
+        padding: 8px 0;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #navbar.active {
+        display: none;
+    }
+
+    #sidebar {
+        display: none;
+    }
+
+    #sidebar.active {
+        display: inline;
+        width: 100%;
+        height: 100vh;
+        background-color: #0068a3;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin: 20px auto;
+        gap: 5px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    i {
+        display: none;
+    }
+
+    .ti-plus {
+        display: inline;
+        color: #ffffff;
+        font-size: 20px;
+        height: fit-content;
+        margin: auto 0;
+    }
+
+    .close-button {
+        background-color: #0068a3;
+        border: 1px solid #ffffff;
+        color: #ffffff;
+        width: fit-content;
+        padding: 5px 50px;
+    }
+}
+
+/* Desktop Viewport */
+
+@media (min-width: 640px) {
+    body {
+        background-color: #eaeaea;
+    }
+
+    input[type="submit"] {
+        background-color: #0068a3;
+        color: #ffffff;
+        padding: 10px 0;
+        border-radius: 5px;
+        display: block;
+        width: 100%;
+        border: none;
+    }
+
+    .top-nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    #sidebar {
+        width: 25vw;
+        height: auto;
+        box-shadow: 0px 2px 3px 3px rgba(0, 0, 0, 0.2);
+        background-color: #0068a3;
+    }
+
+    .close-button {
+        display: none;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        box-shadow: 0px 2px 3px 3px rgba(0, 0, 0, 0.2);
+        height: fit-content;
+        padding: 5px 0;
+        width: 100%;
+    }
+
+    #sidebar.active {
+        width: 0%;
+        overflow-x: hidden;
+    }
+
+    #navbar.active {
+        height: fit-content;
+        flex-direction: row;
+        width: 100%;
+        box-shadow: 0px 2px 3px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 40px auto;
+        width: 220px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #ffffff;
+        height: fit-content;
+        padding: auto 0;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    p {
+        height: fit-content;
+        margin: auto 0;
+    }
+
+    .icon-sidebar {
+        font-size: 25px;
+        height: fit-content;
+        margin: auto 0;
+    }
+
+    .plus-icon-color {
+        color: #ffffff !important;
+        margin: auto 0;
+    }
+
+    ul.breadcrumb {
+        width: 100%;
+        background-color: #ffffff;
+        padding: 0 10px;
+        border-radius: 3px;
+    }
+
+    ul.breadcrumb li a {
+        display: inline;
+        font-size: 18px;
+        color: #0067a3b5;
+    }
+
+    ul.breadcrumb li + li:before {
+        padding: 8px;
+        color: black;
+        content: "/\00a0";
+    }
+
+    #container {
+        width: 85%;
+        margin: 0 auto;
+        padding: 25px 0;
+        overflow-x: hidden;
+    }
+
+    .breadcrumb-list {
+        color: #0068a3;
+        font-size: 24px;
+        margin: auto 0;
+    }
+
+    .margin-y-auto {
+        height: fit-content;
+        margin: -10px 0 0 0;
+        font-size: 12px;
+    }
+
+    .cds-date-picker__range {
+        background-color: #ffffff !important;
+        border-bottom: none !important;
+    }
+
+    .wrapper {
+        height: 400px !important;
+        margin: 15px 0;
+    }
+
+    .disable-scrollbars::-webkit-scrollbar {
+        display: none;
+    }
+
+    .disable-scrollbars {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none;
+    }
+}

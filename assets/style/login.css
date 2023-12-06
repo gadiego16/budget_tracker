@@ -1,0 +1,131 @@
+@media (max-width: 640px) {
+    nav {
+        width: 100%;
+        background-color: #ffffff;
+        display: flex;
+        box-shadow: 0px 2px 3px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo {
+        width: 65%;
+    }
+
+    form {
+        width: 80%;
+        box-shadow: 0px 2px 3px 3px rgba(0, 0, 0, 0.2);
+        margin: 50px auto 0 auto;
+        border-radius: 6px;
+        background-color: #ffffff;
+    }
+
+    input[type="submit"] {
+        background-color: #0068a3;
+        color: #ffffff;
+        padding: 10px 0;
+        border-radius: 5px;
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        border: none;
+    }
+
+    h3 {
+        text-align: center;
+        margin: 10px 0;
+        color: #0068a3;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+    }
+
+    p {
+        margin-top: 30px;
+        font-size: 14px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .form-control {
+        border: none;
+        border-bottom: 2px solid #0068a3;
+        border-radius: 0;
+        background-color: #eaeaea;
+    }
+
+    .form-control:focus {
+        border: none;
+        border-color: initial;
+        box-shadow: none;
+        border-bottom: 2px solid #0068a3;
+        background-color: #eaeaea;
+    }
+
+    label::after {
+        background-color: transparent !important;
+    }
+}
+
+@media (min-width: 640px) {
+    nav {
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: 0px 2px 3px 3px rgba(0, 0, 0, 0.2);
+        padding: 8px 0;
+    }
+
+    .logo {
+        width: 12.8%;
+    }
+
+    form {
+        width: 25%;
+        box-shadow: 0px 2px 3px 3px rgba(0, 0, 0, 0.2);
+        margin: 50px auto 0 auto;
+        border-radius: 6px;
+        background-color: #ffffff;
+    }
+
+    h3 {
+        text-align: center;
+        margin: 10px 0;
+        color: #0068a3;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+    }
+
+    .form-control {
+        border: none;
+        border-bottom: 2px solid #0068a3;
+        border-radius: 0;
+        background-color: #eaeaea;
+    }
+
+    .form-control:focus {
+        border: none;
+        border-color: initial;
+        box-shadow: none;
+        border-bottom: 2px solid #0068a3;
+        background-color: #eaeaea;
+    }
+
+    label::after {
+        background-color: transparent !important;
+    }
+
+    input[type="submit"] {
+        background-color: #0068a3;
+        color: #ffffff;
+        padding: 10px 0;
+        border-radius: 5px;
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        border: none;
+    }
+
+    p {
+        margin-top: 30px;
+        font-size: 14px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
