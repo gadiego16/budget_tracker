@@ -245,14 +245,14 @@ if (isset($_SESSION["isAuthenticated"])) {
                                         <?php echo $value["label"] ?>
                                     </cds-table-cell>
                                     <cds-table-cell style="display: flex; flex-direction: row; gap: 5px;">
-                                        <form action="./controller/delete_record_by_id.php" method="post">
+                                        <form action="../controller/delete_record_by_id.php" method="post">
                                             <cds-modal id="modal-validate-delete">
                                                 <div style="background-color: #ffffff; width: 50%; margin: 0 auto;">
                                                     <cds-modal-header>
                                                         <p style="font-size: 18px; font-weight: 600; color: #0068a3; margin: 0 30px">DELETE LABEL CONFIRMATION</p>
                                                     </cds-modal-header>
                                                     <cds-modal-body>
-                                                        <input type="hidden" name="record_id" id="record_id">
+                                                        <input type="hidden" name="label_id" id="label_id">
                                                         <p style="font-weight: 400; margin: 0 30px; font-size: 16px">Do you want to delete the label name
                                                             <span style="font-weight: 600; color: #FE3B2C" id="account_name">
                                                                 <!-- <?php echo $value["label"] ?> -->
@@ -264,7 +264,7 @@ if (isset($_SESSION["isAuthenticated"])) {
                                                         <button data-modal-close type="reset" style="width: 50%; background-color: #535353; border: 0; color: #ffffff">
                                                             Cancel
                                                         </button>
-                                                        <button type="submit" name="delete_from_record" style="width: 50%; background-color: #FE3B2C; border: 0; color: #ffffff">
+                                                        <button type="submit" name="delete_from_label" style="width: 50%; background-color: #FE3B2C; border: 0; color: #ffffff">
                                                             Delete
                                                         </button>
                                                     </cds-modal-footer>
@@ -470,11 +470,8 @@ if (isset($_SESSION["isAuthenticated"])) {
             document.getElementById("modal-example").open = true;
         });
 
-        function onValidateDelete(record_id, category, account_name) {
-            console.log(record_id, category, account_name);
-            document.getElementById("category").innerText = category;
-            document.getElementById("account_name").innerText = account_name;
-            document.getElementById("record_id").value = record_id;
+        function onValidateDelete(label_id) {
+            document.getElementById("label_id").value = label_id;
             document.getElementById("modal-validate-delete").open = true;
         }
     </script>
